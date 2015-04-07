@@ -32,6 +32,7 @@
 ```
 MANDRILL_USERNAME: "joe.developer@gmail.com"
 MANDRILL_PASSWD: "verysecret_mandrill_api_key"
+```
 
 #### Mandrill:
 
