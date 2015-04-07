@@ -87,6 +87,11 @@ $redis = Redis.new(:host => 'localhost', :port => 6379)
 
 `bundle exec sidekiq`
 
+### Reference:
+
+* [Using Sidekiq to send emails asynchronously](http://blog.remarkablelabs.com/2013/01/using-sidekiq-to-send-emails-asynchronously) by Kevin Faustino
+
+* [Using Redis with Ruby on Rails](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html) by Jim Neath
   
 ####TBD
 
