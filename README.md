@@ -4,9 +4,11 @@
 
 * Ruby ~> 2.0
 
-* Sidekiq gem
+* sidekiq gem
 
 * [ Mandrill Account ]( http://mandrill.com )
+
+* figaro gem
 
 
 ### Configuration
