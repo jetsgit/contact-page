@@ -4,7 +4,7 @@
 
 * Ruby ~> 2.0
 
-* [sidekiq gem](https://github.com/laserlemon/figaro)
+* [sidekiq gem](https://github.com/mperham/sidekiq)
 
 * [ Mandrill Account ]( http://mandrill.com )
 
@@ -28,7 +28,7 @@
 
 **Install**
 
-* addd figaro to gemfile
+* addd figaro to Gemfile
 * bundle
 * run    `figaro install`
 * add secret keys for Mandrill in `config/application.yml`
@@ -69,6 +69,13 @@ Edit `create` and invoke mailer:
         ContactMailer.contact_message(@contact).deliver
 ```
 
+#### sidekiq
+
+* add sidekiq to Gemfile
+* bundle
+* start sidekiq
+
+`bundle exec sidekiq`
 ####TBD
 
 * How to run the test suite
