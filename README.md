@@ -18,7 +18,8 @@
 
 #### Mandrill:
 
-`# production.rb, test.rb, development.rb or application.rb
+```
+# production.rb, test.rb, development.rb or application.rb
 
 YourApp::Application.configure do
   config.action_mailer.smtp_settings = {
@@ -29,6 +30,6 @@ YourApp::Application.configure do
     :password  => ENV["MANDRILL_PASSWORD"], # SMTP password is any valid API key
     :authentication => 'login', # Mandrill supports 'plain' or 'login'
     :domain => 'yourdomain.com', # your domain to identify your server when connecting
-  }`
-
+  }
+```
 
