@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
-  phone: MyString
-  msg: MyText
+  name: Jack Poston
+  email: poston@example.com
+  phone: 360.221.1234
+  msg: Things are a lot stranger after Foundation!
 
 two:
-  name: MyString
-  email: MyString
-  phone: MyString
-  msg: MyText
+  name: Mary Wujick
+  email: mary@example.com 
+  phone: 360.221.2121
+  msg: Hello from the Wuj! The garden is beautiful!

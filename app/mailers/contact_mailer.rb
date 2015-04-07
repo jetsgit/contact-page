@@ -8,6 +8,6 @@ class ContactMailer < ActionMailer::Base
   #
   def contact_message(contact)
     @contact = contact
-    mail to: "jet@whidbey.com", subject: "Message from Portfolio Coontact"
+    mail to: "jet@whidbey.com", subject: "Message from Portfolio Contact"
   end
 end
