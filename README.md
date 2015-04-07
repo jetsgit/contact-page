@@ -59,10 +59,6 @@ YourApp::Application.configure do
   }
 ```
 
-#### contacts_controller.rb
-
-
-```
 
 #### sidekiq
 
@@ -86,6 +82,7 @@ $redis = Redis.new(:host => 'localhost', :port => 6379)
       if @contact.save
         ContactMailer.delay_for(2.minute).contact_message(@contact)
 
+```
 * start sidekiq
 
 `bundle exec sidekiq`
