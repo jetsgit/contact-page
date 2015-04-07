@@ -4,11 +4,12 @@
 
 * Ruby ~> 2.0
 
-* sidekiq gem
+* [sidekiq gem](https://github.com/laserlemon/figaro)
 
 * [ Mandrill Account ]( http://mandrill.com )
 
-* figaro gem
+* [figaro gem](https://github.com/lasaerlemon/figaro)
+ 
 
 
 ### Configuration
@@ -25,8 +26,6 @@
 
 
 #### figaro
-
-[figaro on github](https://github.com/lasaerlemon/figaro)
 
 **Install**
 

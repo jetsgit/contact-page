@@ -5,7 +5,8 @@ gem 'sass-rails', '~> 4.0.2'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
-gem 'figaro'
+gem 'figaro', '~> 1.1.0'
+gem 'sidekiq', '~> 3.3.3'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -19,7 +20,7 @@ group :doc do
 end
 
 group :development do
-  gem 'pry-byebug'
+  gem 'pry-byebug', '~> 2.0.0'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
