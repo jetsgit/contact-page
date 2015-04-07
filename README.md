@@ -35,9 +35,9 @@ MANDRILL_PASSWD: "verysecret_mandrill_api_key"
 
 #### Mandrill:
 
-```
-# production.rb, test.rb, development.rb or application.rb
+production.rb, test.rb, development.rb or application.rb
 
+```
 YourApp::Application.configure do
   config.action_mailer.default charset: "utf-8"
   config.action_mailer.perform_deliveries = true
