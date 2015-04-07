@@ -139,7 +139,7 @@ DEPENDENCIES
   figaro (~> 1.1.0)
   jbuilder (~> 1.2)
   jquery-rails
-  pry-byebug
+  pry-byebug (~> 2.0.0)
   rails (= 4.0.13)
   sass-rails (~> 4.0.2)
   sdoc

@@ -4,6 +4,8 @@
 
 * Ruby ~> 2.0
 
+* Redis Server
+
 * [sidekiq gem](https://github.com/mperham/sidekiq)
 
 * [ Mandrill Account ]( http://mandrill.com )
@@ -59,23 +61,36 @@ YourApp::Application.configure do
 
 #### contacts_controller.rb
 
-Edit `create` and invoke mailer:
-```
-  def create
-    @contact = Contact.new(contact_params)
 
-    respond_to do |format|
-      if @contact.save
-        ContactMailer.contact_message(@contact).deliver
 ```
 
 #### sidekiq
 
 * add sidekiq to Gemfile
 * bundle
+* create `config/initializers/redis.rb`
+
+    ...with the following code:
+```
+$redis = Redis.new(:host => 'localhost', :port => 6379)
+```
+* contacts_controller.rb 
+
+    Edit `create` and invoke mailer,
+    send email after 2 minute delay:
+```
+  def create
+    @contact = Contact.new(contact_params)
+
+    respond_to do |format|
+      if @contact.save
+        ContactMailer.delay_for(2.minute).contact_message(@contact)
+
 * start sidekiq
 
 `bundle exec sidekiq`
+
+  
 ####TBD
 
 * How to run the test suite
