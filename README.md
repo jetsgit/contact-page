@@ -18,6 +18,7 @@
 * `bundle`
 * `bundle exec rake db:migrate`
 * Generate the mailer
+
     `bundle exec rails g mailer contact_mailer contact_message`
 
 
