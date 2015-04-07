@@ -11,8 +11,10 @@
 
 ### Configuration
 
-* Scaffold `contact`
+* Scaffold `contact` to create MVC
+
     `bundle exec rails g scaffold Contact name email phone msg:text`
+
 * `bundle`
 * `bundle exec rake db:migrate`
 * Generate the mailer
