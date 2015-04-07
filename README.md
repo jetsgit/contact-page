@@ -1,4 +1,4 @@
-## Demo of Mail in Rails 4.0 using Mandrill smtp service and Sidekiq for delayed job. 
+## Mail in Rails 4.0 using Mandrill and Sidekiq.  
 
 ### Requires:
 
@@ -65,6 +65,8 @@ Edit `create` and invoke mailer:
       if @contact.save
         ContactMailer.contact_message(@contact).deliver
 ```
+
+####TBD
 
 * How to run the test suite
 
