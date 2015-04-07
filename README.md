@@ -93,6 +93,6 @@ $redis = Redis.new(:host => 'localhost', :port => 6379)
 
 * [Using Redis with Ruby on Rails](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html) by Jim Neath
   
-####TBD
+### Test
 
-* How to run the test suite
+* `bundle exec rake`
