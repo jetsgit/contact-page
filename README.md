@@ -11,7 +11,8 @@
 * [ Mandrill Account ]( http://mandrill.com )
 
 * [figaro gem](https://github.com/lasaerlemon/figaro)
- 
+
+* gem minitest-rails
 
 
 ### Configuration
